@@ -1,0 +1,139 @@
+/*
+Theme Name: ORIGINAL
+Description: オリジナルのテーマ
+Author: 管理人
+*/
+
+/* ===================== レイアウト ========================== */
+body					{background-color: #000000;
+						color: #ffffff;
+						margin: 20px;}
+						
+#container				{width: 820px;
+						margin: auto;}
+						
+#content				{margin: 20px 0;
+						overflow: hidden;}
+						
+#leftcontent			{float: left;
+						width: 400px;}
+						
+#rightcontent			{float: right;
+						width: 400px;}
+						
+#foot					{clear: both;}
+
+#head, #leftcontent, #rightcontent, #foot
+						{background-color: #dd6600;}
+						
+/* ========================= リンク  ============================ */
+a						{color: #ffffff;
+						text-decoration: none;}
+						
+a img					{border: none;}
+
+/* ========================= ヘッダー ========================== */
+#head					{background: none;}
+
+#head h1				{border-bottom: solid 2px #ffffff;
+						padding-bottom: 8px;
+						margin: 0 0 8px;}	
+
+/* ======================== フッター =========================== */
+#foot					{background: none;
+						border-top: solid 2px #ffffff;
+						padding-top: 10px;
+						padding-bottom: 20px;}
+						
+#foot p					{font-size: 14px;
+						margin: 0;}						
+
+/* ================== ナビゲーションバー ======================== */
+.menu, .menu ul			{list-style-type: none;
+						margin: 0 0 30px;
+						padding: 0;
+						overflow: hidden;}
+						
+.menu li				{float: left;}
+
+.menu li a				{font-size: 12px;
+						margin-right: 20px;
+						display: inline-block;
+						height: 28px;
+						background-image: url(images/mark.png);
+						background-repeat: no-repeat;
+						background-position: -200px 0;}
+
+.menu li a:hover		{color: #ffaa00;
+						background-position: center bottom;}
+						
+.menu li.current-post-parent a,
+.menu li.current-menu-item a
+						{background-position: center bottom;}
+												
+#content				{clear: both;}
+
+/* ===================== コンテンツ  ========================== */
+#content h2				{font-size: 18px;
+						margin-bottom: 0;}
+						
+#content p				{font-size: 12px;
+						line-height: 1.5;}
+						
+#content .postdate		{color: #aaaaaa;
+						margin-top: 8px;}
+						
+#leftcontent			{background: none;
+						text-align: center;}
+						
+#rightcontent img		{margin-right: 20px;
+						margin-bottom: 20px;}
+						
+#rightcontent .lineend img
+						{margin-right: 0;}
+
+#rightcontent			{background: none;}
+
+/* ==================== カテゴリー ======================== */
+.category #leftcontent			{border: dotted 1px #ffffff;
+						padding: 50px 0}
+						
+.category #leftcontent h2			{margin: 0;}
+
+.category #leftcontent p			{margin: 30px 0 0;}
+
+.category #leftcontent				{width: 240px;}
+
+.category #rightcontent				{width: 540px;}
+
+/* ===================== 個別ページ ====================== */
+.photo, .post						{text-align: center;
+									margin: 0;}
+									
+.prev								{float: left;
+									margin: 0;
+									padding-top: 178px;}
+									
+.next								{float: right;
+									margin: 0;
+									padding-top: 178px;}
+									
+/* ======================== プロフィール =================== */
+.page #leftcontent					{border: dotted 1px #ffffff;
+									padding: 50px 0}
+									
+.page #leftcontent h2				{margin: 0;}
+
+.page #leftcontent					{width: 240px;}
+
+.page #rightcontent					{width: 540px;}
+
+.page #favorite						{text-align: center;
+									border: solid 2px #444444;
+									padding: 10px;
+									margin: 20px 0;}
+									
+.page #favorite h3					{font-size: 14px;
+									background-color: #444444;
+									padding: 5px;
+									margin: 0 0 30px;}																																																																																																												

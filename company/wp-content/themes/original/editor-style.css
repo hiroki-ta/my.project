@@ -1,0 +1,22 @@
+h3					{font-size: 16px;
+					border-left: solid 12px #8bc124;
+					padding-left: 10px;}
+		
+p					{font-size: 14px;
+					line-height: 1.5;
+					margin: 0 0 20px;}
+					
+/* 画像  */
+.alignleft			{float: left;
+					margin-right: 20px;
+					margin-bottom: 20px;}
+					
+.alignright			{float: right;
+					margin-left: 20px;
+					margin-bottom: 20px;}
+					
+.aligncenter		{float: both;
+					display: block;
+					margin: 25px auto;}
+					
+a img				{border: none;}
