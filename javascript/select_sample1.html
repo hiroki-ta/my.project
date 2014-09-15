@@ -11,6 +11,7 @@ $(function(){
 		$(".readonly_data").addClass('show');
 		setData();
 	});
+	$(".readonly_data").addClass('hide');
 });
 
 function setData()
@@ -30,7 +31,6 @@ function setData()
 				document.aForm.result2.value = order_data[i]["surface"];
 			}
 			else if (!txt) {
-				document.aForm.s.addClass('hide');
 				document.aForm.result1.value = "";
 				document.aForm.result2.value = "";
 			}
