@@ -17,6 +17,10 @@ function setData(txt)
 				document.aForm.result1.value = order_data[i]["size"];
 				document.aForm.result2.value = order_data[i]["surface"];
 			}
+			else {
+				document.aForm.result1.value = "";
+				document.aForm.result2.value = "";
+			}
 		}
 	}
 }
