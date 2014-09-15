@@ -10,8 +10,11 @@ function setData(txt)
 								{"text":"配布資料（2日目）","size":"A5","surface":"片面"},
 								{"text":"配布資料（3日目）","size":"A4","surface":"両面"},
 	];
-	var options = document.getElementById('paper');
-	document.aForm.result1.value = order_data[0]["size"];
+	var element = document.getElementById('paper');
+	document.aForm.result2.value = element.options.length;
+	for (var i=0; i<element.options.length;i++) {
+		document.aForm.result1.value = order_data[0]["size"];
+	}
 }
 // --></script>
 </head>
