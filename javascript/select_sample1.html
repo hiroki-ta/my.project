@@ -8,10 +8,14 @@
 $(function(){
 	$(".readonly_data").addClass('hide');
 	$("#paper").change(function(){
-		$(".readonly_data").addClass('show');
-		setData();
+		if (!$('[name=paper]').val()) {
+			$(".readonly_data").addClass('hide');
+		}
+		else {
+			$(".readonly_data").addClass('show');
+			setData();
+		}
 	});
-	$(".readonly_data").addClass('hide');
 });
 
 function setData()
