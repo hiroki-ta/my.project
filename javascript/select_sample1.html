@@ -9,12 +9,11 @@ $(function(){
 	$(".readonly_data").addClass('hide');
 	$("#paper").change(function(){
 		if (!$('[name=paper]').val()) {
-			$(".readonly_data").addClass('hide');
+			$(".readonly_data").removeClass('show');
 		}
 		else {
 			$(".readonly_data").addClass('show');
 			setData();
-			$(".readonly_data").removeClass('show');
 		}
 	});
 });
