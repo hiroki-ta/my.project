@@ -5,12 +5,12 @@
 <script language="JavaScript"><!--
 function setData(txt)
 {
+	alert(txt);
 	var order_data = {
 								{"text":"配布資料","size":"A4", "surface":"片面"},
 								{"text":"配布資料（2日目）","size":"B5","surface":"両面"},
 								{"text":"配布資料（3日目）","size":"B4","surface":"片面"}
 	};
-	alert(txt);
 	var element = document.getElementById("paper");
 	for (var i=0; i<element.options.length; i++) {
 		for (key in order_data[i]) {
