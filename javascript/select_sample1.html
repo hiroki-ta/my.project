@@ -13,6 +13,7 @@ function setData(txt)
 	var element = document.getElementById("paper");
 	for (var i=0; i<element.options.length; i++) {
 		for (key in order_data[i]) {
+			alert(order_data[i]["text"]);
 			if (txt == order_data[i]["text"]) {
 				document.aForm.result1.value = order_data[i]["size"];
 				document.aForm.result2.value = order_data[i]["surface"];
