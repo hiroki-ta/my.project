@@ -5,7 +5,10 @@
 <script language="JavaScript"><!--
 function setData(txt)
 {
-	document.aForm.result.value = txt;
+	var order_data = {"text":"配布資料（2日目）","size":"A4"};
+	if (txt == order_data["text"]) {
+		document.aForm.result.value = order_data["size"];
+	}
 }
 // --></script>
 </head>
