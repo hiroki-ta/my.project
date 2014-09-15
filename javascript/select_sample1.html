@@ -13,7 +13,9 @@ function setData(txt)
 	var element = document.getElementById('paper');
 	document.aForm.result2.value = element.options.length;
 	for (var i=0; i<element.options.length;i++) {
-		document.aForm.result1.value = order_data[0]["size"];
+		for (key in order_data[i]) {
+			document.aForm.result1.value = order_data[0]["size"];
+		}
 	}
 }
 // --></script>
