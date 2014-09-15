@@ -11,10 +11,12 @@ function setData(txt)
 								{"text":"配布資料（3日目）","size":"A4","surface":"両面"},
 	];
 	var element = document.getElementById('paper');
-	document.aForm.result2.value = element.options.length;
 	for (var i=0; i<element.options.length;i++) {
 		for (key in order_data[i]) {
-			document.aForm.result1.value = order_data[0]["size"];
+			if (txt == order_data[i][key]) {
+				document.aForm.result1.value = order_data[i]["size"];
+				document.aForm.result2.value = order_data[i]["surface"];
+			}
 		}
 	}
 }
