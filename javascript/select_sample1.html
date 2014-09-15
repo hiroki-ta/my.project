@@ -5,24 +5,33 @@
 <script language="JavaScript"><!--
 function setData(txt)
 {
-	var order_data = {"text":"配布資料（2日目）","size":"A4", "surface":"片面"};
-	if (txt == order_data["text"]) {
-		document.aForm.result1.value = order_data["size"];
-		document.aForm.result2.value = order_data["surface"];
+	var order_data = {
+								{"text":"配布資料","size":"A4", "surface":"片面"},
+								{"text":"配布資料（2日目）","size":"B5","surface":"両面"},
+								{"text":"配布資料（3日目）","size":"B4","surface":"片面"}
+	};
+	var element = document.getElementById("paper");
+	for (var i=0; i<element.options.length; i++) {
+		for (key in order_data[i]) {
+			if (txt == order_data[i]["text"]) {
+				document.aForm.result1.value = order_data[i]["size"];
+				document.aForm.result2.value = order_data[i]["surface"];
+			}
+		}
 	}
 }
 // --></script>
 </head>
 <body>
 <form name="aForm">
-<select onChange="setData(this[this.selectedIndex].value)">
+<select name ="paper" id="paper" onChange="setData(this[this.selectedIndex].value)">
 <option value="">選択してください
 <option value="配布資料">配布資料
 <option value="配布資料（2日目）">配布資料（2日目）
 <option value="配布資料（3日目）">配布資料（3日目）
 </select>
 <br>
-<input type="text" name="result1" disabled><br />
+<input type="text" name="result1" readonly><br />
 <input type="text" name="result2" readonly>
 </form>
 </body>
