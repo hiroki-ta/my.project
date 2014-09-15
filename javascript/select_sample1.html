@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>セレクトメニューで選択された項目の値をテキストフィールドに表示する</title>
+<script language="JavaScript"><!--
+function setData(txt)
+{
+	document.aForm.result.value = txt;
+}
+// --></script>
+</head>
+<body>
+<form name="aForm">
+<select onChange="setData(this[this.selectedIndex].value)">
+<option value="MZ-80K">MZ-80K
+<option value="MZ-80C">MZ-80C
+<option value="MZ-80K2">MZ-80K2
+</select>
+<br>
+<input type="text" name="result">
+</form>
+</body>
+</html>
