@@ -11,7 +11,7 @@ function setData(txt)
 								{"text":"配布資料（3日目）","size":"B4","surface":"片面"},
 	};
 	document.aForm.result1.value = order[1]["size"];
-	var element = document.getElementById("paper");
+	//var element = document.getElementById("paper");
 	/*for (var i=0; i<element.options.length; i++) {
 		for (key in order_data[i]) {
 			if (txt == order_data[i]["text"]) {
@@ -26,7 +26,7 @@ function setData(txt)
 </head>
 <body>
 <form name="aForm">
-<select id="paper" onChange="setData(this[this.selectedIndex].value)">
+<select onChange="setData(this[this.selectedIndex].value)">
 <option value="">選択してください
 <option value="配布資料">配布資料
 <option value="配布資料（2日目）">配布資料（2日目）
