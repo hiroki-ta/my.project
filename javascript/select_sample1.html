@@ -5,9 +5,10 @@
 <script language="JavaScript"><!--
 function setData(txt)
 {
-	var order_data = {"text":"配布資料（2日目）","size":"A4"};
+	var order_data = {"text":"配布資料（2日目）","size":"A4", "surface":"片面"};
 	if (txt == order_data["text"]) {
-		document.aForm.result.value = order_data["size"];
+		document.aForm.result1.value = order_data["size"];
+		document.aForm.result2.value = order_data["surface"];
 	}
 }
 // --></script>
@@ -21,7 +22,8 @@ function setData(txt)
 <option value="配布資料（3日目）">配布資料（3日目）
 </select>
 <br>
-<input type="text" name="result">
+<input type="text" name="result1" disabled><br />
+<input type="text" name="result2" readonly>
 </form>
 </body>
 </html>
